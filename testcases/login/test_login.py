@@ -16,7 +16,7 @@ def test_login(yaml_file):
     #HTTP 状态码 200 表示这次 HTTP 请求成功被服务器正常处理了
     assert res.status_code == 200
 
-
+#改一下
 #python mock_server.py  flask模拟登录接口服务器
 #$env:PYTHONPATH = "."  告诉 Python：当前 myxiangmu 目录也要作为导包的查找位置。
 #python -m pytest --alluredir=allure-results    生成Allure 报告
