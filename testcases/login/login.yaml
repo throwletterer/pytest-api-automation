@@ -1,0 +1,26 @@
+#YAML 写测试用例比较直观、好维护。
+
+#接口基本信息   python中字典
+base_info:
+  api_name: 用户登录
+  url: /login
+  method: post
+  headers:
+    Content-Type: application/x-www-form-urlencoded
+
+#测试用例  python中列表
+test_cases:
+  - case_name: 正确的用户名和密码
+    data:
+      username: test_user
+      password: test_ass
+    validations:
+      - contains: 登陆成功
+    extract:
+      - token
+  - case_name: 错误的用户名
+    data:
+      username: wrong_user
+      password: test_pass
+    validations:
+      - contains: 用户名或密码错误

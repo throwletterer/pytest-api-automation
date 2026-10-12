@@ -1,0 +1,6 @@
+Flask
+requests
+PyYAML
+pytest
+pytest-rerunfailures
+allure-pytest

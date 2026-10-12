@@ -1,0 +1,9 @@
+- request:
+    #127.0.0.1 → 你的电脑自己/云服务器自己  :8787 是端口    /login是接口路径
+    url: http://127.0.0.1:8787/login
+    method: post
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+    data:
+      username: wrong_user
+      password: "123456"
