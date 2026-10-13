@@ -1,9 +1,13 @@
 - request:
     #127.0.0.1 → 你的电脑自己/云服务器自己  :8787 是端口    /login是接口路径
+    #使用哪个接口
     url: http://127.0.0.1:8787/login
+    #使用post（提交） http请求方式   还有get
     method: post
+    #请求头  告诉服务器发送的数据是什么格式
     headers:
       Content-Type: application/x-www-form-urlencoded
+    #真正的数据
     data:
       username: wrong_user
       password: "123456"
